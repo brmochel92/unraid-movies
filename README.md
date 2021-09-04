@@ -1,7 +1,7 @@
 # Unraid Movies
 
 ## Languages
-![](https://img.shields.io/badge/FrontEnd-Angular-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
+![](https://img.shields.io/badge/FrontEnd-Angular-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=E33C29)
 ![](https://img.shields.io/badge/FrontEnd-SemanticUI-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5F7FF6)
 
 This is a collection of the movies I currently store and stream over my personal LAN.  The idea behind this was to always have a way to obtain an updated list of my movie collection.  Due to the way my server is configured, I only have access via my LAN, so this allows me to track or reference the collection from anywhere at any time. 
