@@ -1,4 +1,4 @@
-# UnraidMovies
+# Unraid Movies
 
 This is a collection of the movies I currently store and stream over my personal LAN.  The idea behind this was to always have a way to obtain an updated list of my movie collection.  Due to the way my server is configured, I only have access via my LAN, so this allows me to track or reference the collection from anywhere at any time.  
 
