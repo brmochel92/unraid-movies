@@ -2,12 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>UnraidMovies</title>
+  <title>Mochel's Unraid Movies</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./assets/images/unraid-icon.png">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
 </head>
-<body>
+<body id="root">
+  <div class="ui tablet computer only padded grid">
+    <div class="ui borderless fluid huge menu">
+      <div class="ui container">
+        <a class="header item"><i class="film icon large unraid-icon-logo"></i>Mochel's Unraid Movies</a>
+        <a class="ui dropdown item">
+          Movie Categories <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">Action</div>
+            <div class="item">Comedy</div>
+            <div class="item">Drama</div>
+            <div class="item">Fantasy</div>
+            <div class="item">Horror</div>
+            <div class="item">Mystery</div>
+            <div class="item">Romance</div>
+            <div class="item">Thriller</div>
+            <div class="item">Western</div>
+            <div class="ui divider"></div>
+            <div class="header">Other</div>
+            <div class="item">Recommended</div>
+            <div class="item">Least Watched</div>
+            <div class="item">Most Watched</div>
+          </div>
+        </a>
+        <a class="item">Upcoming Movies</a>
+        <a class="item">Newest Movies</a>  
+        <div class="right menu">
+          <a class="item">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui mobile only padded grid">
+    <div class="ui borderless huge fluid menu">
+      <a class="header item">Mochel's Unraid Movies</a>
+      <div class="right menu">
+        <div class="item">
+          <button class="ui icon toggle basic button">
+            <i class="content icon"></i>
+          </button>
+        </div>
+      </div>
+      <div class="ui vertical borderless fluid menu">
+        <a class="active item">Home</a> 
+        <div class="ui dropdown item">
+          Movie Categories<i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">Action</div>
+            <div class="item">Comedy</div>
+            <div class="item">Drama</div>
+            <div class="item">Fantasy</div>
+            <div class="item">Horror</div>
+            <div class="item">Mystery</div>
+            <div class="item">Romance</div>
+            <div class="item">Thriller</div>
+            <a class="item"> Western </a>
+            <div class="divider"></div>
+            <div class="header">Other</div>
+            <a class="item"> Least Watched </a>
+            <a class="item"> Most Watched </a>
+          </div>
+        </div>
+        <a class="item">Upcoming Movies</a> 
+        <a class="active item">Newest Movies</a>
+      </div>
+    </div>
+  </div>
   <app-root></app-root>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".ui.toggle.button").click(function() {
+        $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+      });
+
+      $(".ui.dropdown").dropdown();
+    });
+  </script>
 </body>
 </html>

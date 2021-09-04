@@ -1,0 +1,26 @@
+<ng-container *ngIf="containMovieArray">
+    <div class="ui divided items">
+        <div class="ui padded stackable grid">
+            <div *ngFor="let i of containMovieArray" class="nine wide centered column">
+                <div class="item">
+                    <div class="ui floated small rounded image">
+                        <img [src]="i.coverImage">
+                    </div>
+                    <div class="content ui">
+                        <a class="header">{{i.title}}</a><br><br>
+                        <div class="description">
+                            <p>{{i.description}}</p>
+                        </div><br>
+                        <div class="extra">
+                            <div class="ui label">{{i.movieRating}}</div>
+                            <div class="ui label">{{i.genre}}</div>
+                            <div class="ui label">{{i.distributedBy}}</div>
+                            <div class="ui label">{{i.movieResolution}}</div>
+                            <div class="ui label">{{i.movieAudio}}</div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
