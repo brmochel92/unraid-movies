@@ -2,6 +2,8 @@
 
 This is a collection of the movies I currently store and stream over my personal LAN.  The idea behind this was to always have a way to obtain an updated list of my movie collection.  Due to the way my server is configured, I only have access via my LAN, so this allows me to track or reference the collection from anywhere at any time. 
 
+Check it out here:  https://mochel-movies-7u5oamwwy-brmochel92.vercel.app/
+
 ![image](https://user-images.githubusercontent.com/62531841/132077822-80e548e9-a2fa-4440-b587-bb97dab96c92.png)
 
 # In Progress
