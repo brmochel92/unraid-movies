@@ -23,7 +23,7 @@ const movieArray: movieInterface[]=[
     description: `April 6th, 1917. As a regiment assembles 
     to wage war deep in enemy territory, two soldiers are 
     assigned to race against time and deliver a message that 
-    will stop 1,600 men from walking straight into a deadly trap. ... 
+    will stop 1,600 men from walking straight into a deadly trap.  
     Two British soldiers are sent to deliver an urgent message to an 
     isolated regiment.`,
     uploadedDate: '08-08-2021',
@@ -189,8 +189,11 @@ const movieArray: movieInterface[]=[
   styleUrls: ['./movies-list.component.css'],
 })
 export class MoviesListComponent implements OnInit {
+  searchedKeyword: string;
 
-  constructor() { }
+  constructor() {
+    this.searchedKeyword = "";
+  }
 
   ngOnInit(): void {
   }

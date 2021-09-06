@@ -32,10 +32,10 @@
     </div>
   </div>
 
-<ng-container *ngIf="containMovieArray">
+<ng-container *ngIf="containUpcomingMovieArray">
     <div class="ui divided items">
         <div class="ui padded stackable grid">
-            <div *ngFor="let i of containMovieArray | filter:searchedKeyword" class="nine wide centered column">
+            <div *ngFor="let i of containUpcomingMovieArray | filter:searchedKeyword" class="nine wide centered column">
                 <div class="item">
                     <div class="ui floated small rounded image">
                         <img [src]="i.coverImage">
@@ -49,8 +49,6 @@
                             <div class="ui label">{{i.movieRating}}</div>
                             <div class="ui label">{{i.genre}}</div>
                             <div class="ui label">{{i.distributedBy}}</div>
-                            <div class="ui label">{{i.movieResolution}}</div>
-                            <div class="ui label">{{i.movieAudio}}</div>  
                         </div>
                     </div>
                 </div>
@@ -58,4 +56,3 @@
         </div>
     </div>
 </ng-container>
-
