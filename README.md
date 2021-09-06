@@ -13,7 +13,6 @@ Check it out here:  https://mochel-movies-7u5oamwwy-brmochel92.vercel.app/
 # In Progress
 
 - Authentication to perform CRUD operations on my movies collection
-- Search functionality
 - Sort functionality
 - Request movies
 
