@@ -123,7 +123,8 @@ const upcomingMoviesArray: upcomingMoviesInterface[]= [
     distributedBy: 'DC Films',
     movieRating: 'PG-13',
     description: `The Riddler plays a deadly game of cat and mouse with 
-    Batman and Commissioner Gordon in Gotham City.`,
+    Batman and Commissioner Gordon in Gotham City. Directed by Matt Reeves.  
+    Coming in Early 2022.`,
     releaseDate: '03-04-2022',
     genre: 'Action',
     coverImage: '../../assets/images/movieCovers/thebatman.jpg',

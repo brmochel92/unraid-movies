@@ -8,4 +8,6 @@
     font-size: 1.3em;
 }
 
-
+.two.wide.column.vertical.nav {
+    padding-left: 15em;
+}
