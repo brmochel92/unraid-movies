@@ -6,9 +6,10 @@
 
 This is a collection of the movies I currently store and stream over my personal LAN.  The idea behind this was to always have a way to obtain an updated list of my movie collection.  Due to the way my server is configured, I only have access via my LAN, so this allows me to track or reference the collection from anywhere at any time. 
 
-Check it out here:  https://unraid-movies-brmochel92.vercel.app/
+Check it out here:  https://unraid-movies-brmochel92.vercel.app
 
-![image](https://user-images.githubusercontent.com/62531841/132270140-6b45972a-e1f5-4184-b8ed-f1e42b0dade5.png)
+![image](https://user-images.githubusercontent.com/62531841/132271880-65479733-f8b9-46a5-9366-ec0b082d74f7.png)
+
 
 
 # In Progress
