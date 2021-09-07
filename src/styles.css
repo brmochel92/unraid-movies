@@ -22,6 +22,7 @@ body {
 
 .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
   display: none;
+  background-color: rgb(240, 240, 240);
 }
 
 .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
@@ -79,3 +80,24 @@ body {
 .ui.tablet.computer.only.container.segment {
   display: none;
 }
+
+.unraid-mobile {
+  color: #E33C29;
+  padding-right: 5em;
+}
+
+.header.item.mobile {
+  color: #E33C29;
+  font-weight: 900!important;
+}
+
+.ui.icon.toggle.basic.button {
+  color:#E33C29!important;
+}
+
+
+.active.menu.item {
+  color: white!important;
+  background-color: #E33C29!important;
+}
+

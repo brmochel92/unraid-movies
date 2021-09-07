@@ -30,29 +30,142 @@
           </div>
         </div>
     </div>
-  </div>
+</div>
 
-<ng-container *ngIf="containUpcomingMovieArray">
-    <div class="ui divided items">
-        <div class="ui padded stackable grid">
-            <div *ngFor="let i of containUpcomingMovieArray | filter:searchedKeyword" class="nine wide centered column">
-                <div class="item">
-                    <div class="ui floated small rounded image">
-                        <img [src]="i.coverImage">
-                    </div>
-                    <div class="content ui">
-                        <a class="header">{{i.title}}</a><br><br>
-                        <div class="description">
-                            <p>{{i.description}}</p>
-                        </div><br>
-                        <div class="extra">
-                            <div class="ui label">{{i.movieRating}}</div>
-                            <div class="ui label">{{i.genre}}</div>
-                            <div class="ui label">{{i.distributedBy}}</div>
-                        </div>
-                    </div>
-                </div>
+
+<div class="ui centered mobile only grid">
+  <div class="ui icon input">
+    <input type="text" placeholder="Search movies..." [(ngModel)]="searchedKeyword">
+    <i class="search icon unraid-mobile"></i>
+  </div>
+</div>
+
+<div class="ui tablet computer only grid">
+  <div class="row">
+    <div class="four wide column">
+      <div class="ui vertical menu">
+        <a class="ui dropdown item" style="padding-bottom: 20px;">
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="header">
+              <i class="sort icon"></i>
+              Sort By
             </div>
-        </div>
+              <a class="item">
+                <div class="ui red empty circular label"></div>
+                Title
+              </a>
+              <a class="item">
+                <div class="ui blue empty circular label"></div>
+                Release Year
+              </a>
+              <a class="item">
+                <div class="ui purple empty circular label"></div>
+                Upload Date
+              </a>
+              <a class="item">
+                <div class="ui orange empty circular label"></div>
+                Rating
+              </a>
+              <a class="item">
+                <div class="ui yellow empty circular label"></div>
+                Runtime
+              </a>
+          </div>
+          Sort
+        </a>
+        <a class="ui dropdown item" style="padding-bottom: 20px;">
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="header">
+              <i class="tags icon"></i>
+              Filter By
+            </div>
+            <div class="item">
+              <div class="ui red empty circular label"></div>
+              Audio
+            </div>
+            <div class="item">
+              <div class="ui blue empty circular label"></div>
+              Resolution
+            </div>
+            <div class="item">
+              <div class="ui purple empty circular label"></div>
+              Rating
+            </div>
+            <div class="item">
+              <div class="ui orange empty circular label"></div>
+              Genre
+            </div>
+            <div class="item">
+              <div class="ui yellow empty circular label"></div>
+              Occasion
+            </div>
+          </div>
+          Filter
+        </a>
+        <a class="item" style="padding-bottom: 20px;">
+          Recommended
+          <a class="ui red right corner label">
+            <i class="star icon"></i>
+          </a>
+        </a>
+      </div>
     </div>
-</ng-container>
+    <div class="eight wide column">
+      <ng-container *ngIf="containUpcomingMovieArray">
+        <div class="ui divided items">
+          <div class="ui padded stackable grid">
+            <div *ngFor="let i of containUpcomingMovieArray | filter:searchedKeyword">
+              <div class="item">
+                <div class="ui floated small rounded image">
+                    <img [src]="i.coverImage">
+                </div>
+                <div class="content ui">
+                  <a class="header">{{i.title}}</a><br><br>
+                  <div class="description">
+                      <p>{{i.description}}</p>
+                  </div><br>
+                  <div class="extra">
+                    <div class="ui label">{{i.movieRating}}</div>
+                    <div class="ui label">{{i.genre}}</div>
+                    <div class="ui label">{{i.distributedBy}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<div class="ui mobile only grid">
+    <div class="sixteen wide column">
+      <ng-container *ngIf="containUpcomingMovieArray">
+        <div class="ui divided items">
+          <div class="ui padded stackable grid">
+            <div *ngFor="let i of containUpcomingMovieArray | filter:searchedKeyword">
+              <div class="item">
+                <div class="ui floated small rounded image">
+                    <img [src]="i.coverImage">
+                </div>
+                <div class="content ui">
+                  <a class="header">{{i.title}}</a><br><br>
+                  <div class="description">
+                      <p>{{i.description}}</p>
+                  </div><br>
+                  <div class="extra">
+                    <div class="ui label">{{i.movieRating}}</div>
+                    <div class="ui label">{{i.genre}}</div>
+                    <div class="ui label">{{i.distributedBy}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+</div>
