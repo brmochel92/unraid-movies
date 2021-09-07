@@ -6,15 +6,16 @@
 
 This is a collection of the movies I currently store and stream over my personal LAN.  The idea behind this was to always have a way to obtain an updated list of my movie collection.  Due to the way my server is configured, I only have access via my LAN, so this allows me to track or reference the collection from anywhere at any time. 
 
-Check it out here:  https://mochel-movies-7u5oamwwy-brmochel92.vercel.app/
+Check it out here:  https://unraid-movies-brmochel92.vercel.app/
 
-![image](https://user-images.githubusercontent.com/62531841/132077822-80e548e9-a2fa-4440-b587-bb97dab96c92.png)
+![image](https://user-images.githubusercontent.com/62531841/132270140-6b45972a-e1f5-4184-b8ed-f1e42b0dade5.png)
+
 
 # In Progress
 
 - Authentication to perform CRUD operations on my movies collection
-- Search functionality
-- Sort functionality
+- Pagination
+- Finish Filter/Sorting methods and implement
 - Request movies
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
