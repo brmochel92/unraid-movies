@@ -14,7 +14,8 @@ Check it out here:  https://unraid-movies-brmochel92.vercel.app/
 # In Progress
 
 - Authentication to perform CRUD operations on my movies collection
-- Sort functionality
+- Pagination
+- Finish Filter/Sorting methods and implement
 - Request movies
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
